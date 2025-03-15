@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mega-planet-site/static/css/main.95210bf1.css",
+    "main.js": "/mega-planet-site/static/js/main.c0ca7e7a.js",
+    "static/js/453.79a6af53.chunk.js": "/mega-planet-site/static/js/453.79a6af53.chunk.js",
+    "index.html": "/mega-planet-site/index.html",
+    "main.95210bf1.css.map": "/mega-planet-site/static/css/main.95210bf1.css.map",
+    "main.c0ca7e7a.js.map": "/mega-planet-site/static/js/main.c0ca7e7a.js.map",
+    "453.79a6af53.chunk.js.map": "/mega-planet-site/static/js/453.79a6af53.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95210bf1.css",
+    "static/js/main.c0ca7e7a.js"
+  ]
+}
