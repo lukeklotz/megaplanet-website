@@ -1,1 +1,1 @@
-A landing page for megaplanet artists
+A landing page for megaplanet
