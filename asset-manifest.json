@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mega-planet-site/static/css/main.95210bf1.css",
-    "main.js": "/mega-planet-site/static/js/main.c0ca7e7a.js",
-    "static/js/453.79a6af53.chunk.js": "/mega-planet-site/static/js/453.79a6af53.chunk.js",
-    "index.html": "/mega-planet-site/index.html",
-    "main.95210bf1.css.map": "/mega-planet-site/static/css/main.95210bf1.css.map",
-    "main.c0ca7e7a.js.map": "/mega-planet-site/static/js/main.c0ca7e7a.js.map",
-    "453.79a6af53.chunk.js.map": "/mega-planet-site/static/js/453.79a6af53.chunk.js.map"
+    "main.css": "/megaplanet-website/static/css/main.bded6a53.css",
+    "main.js": "/megaplanet-website/static/js/main.47b74865.js",
+    "static/js/453.4e2fa43d.chunk.js": "/megaplanet-website/static/js/453.4e2fa43d.chunk.js",
+    "index.html": "/megaplanet-website/index.html",
+    "main.bded6a53.css.map": "/megaplanet-website/static/css/main.bded6a53.css.map",
+    "main.47b74865.js.map": "/megaplanet-website/static/js/main.47b74865.js.map",
+    "453.4e2fa43d.chunk.js.map": "/megaplanet-website/static/js/453.4e2fa43d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95210bf1.css",
-    "static/js/main.c0ca7e7a.js"
+    "static/css/main.bded6a53.css",
+    "static/js/main.47b74865.js"
   ]
 }
