@@ -2,17 +2,12 @@ import './App.css';
 import { createRoot } from 'react-dom/client';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { useEffect, useRef } from 'react';
-
-const artists = [
-  { name: "KEVIN NAGEL", url: "https://kevinnagel.bandcamp.com/album/echoes-from-tomorrow" },
-  { name: "MARSH CRANE", url: "https://sweb16.bandcamp.com/" },
-  { name: "ORCHID81", url: "https://orchid81.bandcamp.com/" },
-  { name: "MAGICDJ", url: "https://universalmagic.bandcamp.com/" },
-  { name: "CHUCKNESSA", url: "https://chucknessa.bandcamp.com/" },
-  { name: "MOONSIDE", url: "https://itsmoonside.bandcamp.com/" },
-  { name: "KOKIO", url: "https://kokio.bandcamp.com/album/mysticism-unmastered" },
-  { name: "MLTZR", url: "https://mltzr.bandcamp.com/" }
-];
+import { artists } from './links.js'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { ArtistsPage } from './artistsPage.js';
+import { AboutPage } from './aboutPage.js';
+import { MixPage } from './mixPage.js'
+import { Header } from './components.js'
 
 // Rotating Sphere component with responsive size and smooth rotation
 function RotatingSphere() {
@@ -41,8 +36,8 @@ function RotatingSphere() {
   // Get dynamic radius based on window width
   let radius = Math.max(.001, window.innerWidth / 600);
   
-  if (radius < .7) {    //hacky way to check if we're on an iPhone....
-    radius = Math.max(.001, window.innerWidth / 300);
+  if (radius < .9) {    //hacky way to check if we're on an iPhone....
+    radius = Math.max(.001, window.innerWidth / 100);
   }
 
   return (
@@ -75,17 +70,31 @@ function Names({artists}) {
   );
 }
 
-function App() {
+function Home() {
   return (
     <div className="canvas-container">
+      <Header />
       <BigText />
-      <Names artists={artists}/>
+      <Names artists={artists} />
       <Canvas>
         <ambientLight intensity={1.0} />
         <pointLight position={[2, 5, 5]} />
         <RotatingSphere />
       </Canvas>
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Router>
+        <Routes>
+          <Route path="/mega-planet-site" element={<Home />} />
+          <Route path="/artists" element={<ArtistsPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/mixes" element={<MixPage />} />
+        </Routes>
+    </Router>
   );
 }
 

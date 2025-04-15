@@ -10,15 +10,15 @@ body {
 }
 
 a {
+  z-index: 150;
   text-decoration: none;
   color: inherit;
 }
 
 a:hover {
   color: rgb(0, 0, 255);
-  cursor: pointer;
+  cursor: crosshair;
 }
-
 
 .canvas-container {
   width: 100%;
@@ -26,6 +26,33 @@ a:hover {
   position: relative;
   background-color: rgb(197, 197, 197);
   overflow: hidden; 
+}
+
+.main-header {
+  z-index: 200;
+  display: flex;
+  width: 100%;
+  position: fixed;
+}
+
+.nav-buttons{
+  font-family: "VT323", monospace;
+  font-size: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-bottom: 1px solid black;
+}
+
+.nav-buttons a {
+  z-index: 100;
+}
+
+.nav-buttons a:hover{
+  background-color: orange;
+  cursor: crosshair;
 }
 
 .mega-planet {
@@ -56,6 +83,22 @@ a:hover {
   flex-wrap: wrap; 
 }
 
+.artist-page-list {
+  padding-top: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.artist {
+  font-size: 2rem;
+  padding-left: 10%;
+  border-bottom: 1px solid black;
+}
+
+.artist:hover {
+  background-color: red;
+}
+
 @media (max-width: 768px) {
   .mega-planet {
     font-size: 2rem; 
@@ -68,7 +111,7 @@ a:hover {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 990px) {
 
   .mega-planet {
     font-size: 2.5rem; 
@@ -80,6 +123,28 @@ a:hover {
     display: none;
 
   }
+
+  .main-header{
+    border: none;
+    position: absolute;
+  }
+
+  .artist-page-list{
+    padding-top: 70%;
+  }
+  a {
+    padding: 0px;
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  .nav-buttons{
+   color: blue;
+   padding-top: 10%;
+   border: none;
+   flex-direction: column;
+   align-items: center;
+  }
+
 }
 
 @media (max-width: 320px) {
