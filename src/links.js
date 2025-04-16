@@ -1,4 +1,3 @@
-
 export const artists = [
     { name: "KEVIN NAGEL", url: "https://kevinnagel.bandcamp.com/album/echoes-from-tomorrow" },
     { name: "MARSH CRANE", url: "https://sweb16.bandcamp.com/" },

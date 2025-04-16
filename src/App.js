@@ -89,7 +89,7 @@ function App() {
   return (
     <Router>
         <Routes>
-          <Route path="/mega-planet-site" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/artists" element={<ArtistsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/mixes" element={<MixPage />} />
